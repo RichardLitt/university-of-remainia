@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+        <title>University of Remainia</title>
+        <description>University of Remainia - Richard Littauer</description>
+        <link>http://burntfen.com/university-of-remainia</link>
+        <atom:link href="http://burntfen.com/university-of-remainia/rss.xml" rel="self" type="application/rss+xml" />
+        <lastBuildDate>Sun, 10 Jul 2016 19:27:46 +0100</lastBuildDate>
+        <pubDate>Sun, 10 Jul 2016 19:27:46 +0100</pubDate>
+        <ttl>60</ttl>
+
+
+
+</channel>
+</rss>
