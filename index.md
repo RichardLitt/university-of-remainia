@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Hello World!
+title: British Research in Europe
 tagline: Supporting tagline
 ---
 {% include JB/setup %}
