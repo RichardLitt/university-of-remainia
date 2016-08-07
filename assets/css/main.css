@@ -2487,3 +2487,22 @@
 			}
 
 	}
+
+/* Custom */
+
+ul li ul {
+	padding-left: 20px;
+	margin-bottom: 10px;
+}
+
+ul li ul li {
+	padding-bottom: 0px;
+}
+
+.faculty-content {
+	max-width: 1000px;
+}
+
+.faculty-content h2 {
+	margin-bottom: 10px;
+}

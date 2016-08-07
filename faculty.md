@@ -11,7 +11,9 @@ Faculty of Arts and Humanities
 
 * School of Literature and Modern Languages
 * School of Philosophy
+  - [Dr. Cameron Neylon](faculty/neylon)
 * School of History
+
 
 Faculty of Social Sciences
 --------------------------
