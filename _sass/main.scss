@@ -49,11 +49,13 @@
 
 /* Basic */
 
+	$darkText: #222;
+
 	body {
 		background: #f0f0f0;
 		font-family: 'Source Sans Pro';
 		font-weight: 300;
-		color: #777;
+		color: $darkText;
 
 		&.is-loading * {
 			@include vendor('transition', 'none !important');
@@ -64,13 +66,13 @@
 	input, textarea, select {
 		font-family: 'Source Sans Pro';
 		font-weight: 300;
-		color: #777;
+		color: $darkText;
 	}
 
 	h1, h2, h3, h4, h5, h6 {
 		font-weight: 600;
 		text-transform: uppercase;
-		color: #888;
+		color: #000;
 	}
 
 	h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
@@ -517,7 +519,7 @@
 		box-shadow: inset 0px -8px 0px 0px #fff, inset 0px -10px 0px 0px #e5e5e5, inset 0px 8px 0px 0px #fff, inset 0px 10px 0px 0px #e5e5e5;
 
 		.inner {
-			background: url('../../images/banner.jpg');
+			background: url('../images/banner.png');
 			background-size: cover;
 		}
 
