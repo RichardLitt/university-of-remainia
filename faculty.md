@@ -6,36 +6,32 @@ group:
 ---
 {% include JB/setup %}
 
-Faculty of Arts and Humanities
-------------------------------
+### Faculty of Arts and Humanities
 
-* School of Literature and Modern Languages
-* School of Philosophy
-  - [Dr. Cameron Neylon](faculty/neylon)
-* School of History
+{% for member in site.faculty %}{% if member.department == "Arts" %}
+- [{{member.title}} {{ member.name }}](faculty/{{ member.lastName }}){% endif %}{% endfor %}
 
+### Faculty of Social Sciences
 
-Faculty of Social Sciences
---------------------------
+{% for member in site.faculty %}{% if member.department == "Social Sciences" %}
+- [{{member.title}} {{ member.name }}](faculty/{{ member.lastName }}){% endif %}{% endfor %}
 
-* School of Policy and Government
-* School of Economics
+### Faculty of Natural Sciences
 
-Faculty of Natural Sciences
----------------------------
+{% for member in site.faculty %}{% if member.department == "Natural Sciences" %}
+- [{{member.title}} {{ member.name }}](faculty/{{ member.lastName }}){% endif %}{% endfor %}
 
-* School of Physics
-* School of Chemistry
+### Faculty of Medicine
 
-Faculty of Medicine
--------------------
+{% for member in site.faculty %}
+  {% if member.department == "Medicine" %}
+- [{{member.title}} {{ member.name }}](faculty/{{ member.lastName }}){% endif %}
+{% endfor %}
 
-Support Services
-----------------
+### Support Services
 
 * The University Library
 * Research Support Office
 
-Industrial Partners
--------------------
+### Industrial Partners
 
