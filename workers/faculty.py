@@ -9,8 +9,7 @@ csvfile = 'responses.csv'
 facultydirectory = "../_faculty"
 CROSSREF_FORMAT_URL = 'http://data.crossref.org'
 CROSSREF_HEADERS = {'Accept' : 'text/bibliography; style=apa; locale=en-US'}
-md_template = """
----
+md_template = """---
 layout: faculty
 name: %(name)s
 lastName: %(lastname)s

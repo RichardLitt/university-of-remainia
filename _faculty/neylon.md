@@ -2,12 +2,12 @@
 layout: faculty
 name: "Cameron Neylon"
 lastName: "Neylon"
-title: "Professor"
-department: "Making an Example"
-school: "School of Lorum Ipsum"
+title: "Dr"
+department: "Arts"
+school: ""
 orcid: ""
 openaire: ""
-image: "neylon.jpg"
+image: http://cameronneylon.net/wp-content/uploads/2012/05/CNFrontCropped1.jpg
 url: "https://twitter.com/CameronNeylon"
 twitter: "https://twitter.com/CameronNeylon"
 ---
