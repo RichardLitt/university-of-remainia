@@ -1,14 +1,13 @@
-
 ---
 layout: faculty
-name: KJEdler
-lastName: KJEdler
+name: KJ Edler
+lastName: Edler
 title: Prof
 department: Natural Sciences
-school: 
+school:
 orcid: 0000-0001-5822-0127
 openaire: ''
-image: http://people.bath.ac.uk/chske/People/KEdler/files/edler.jpg
+image: http://people.bath.ac.uk/chske/images/karen.png
 url: "https://twitter.com/CameronNeylon"
 twitter: "https://twitter.com/CameronNeylon"
 ---

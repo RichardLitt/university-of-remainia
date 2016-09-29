@@ -6,35 +6,30 @@ group:
 ---
 {% include JB/setup %}
 
-Faculty of Arts and Humanities
-------------------------------
+### Faculty of Arts and Humanities
 
-* School of Literature and Modern Languages
-* School of Philosophy
-* School of History
+{% for member in site.faculty %}{% if member.department == "Arts" %}
+- [{{member.title}} {{ member.name }}](faculty/{{ member.lastName | downcase }}/){% endif %}{% endfor %}
+
+### Faculty of Social Sciences
+
+{% for member in site.faculty %}{% if member.department == "Social Sciences" %}
+- [{{member.title}} {{ member.name }}](faculty/{{ member.lastName | downcase }}/){% endif %}{% endfor %}
+
+### Faculty of Natural Sciences
+
+{% for member in site.faculty %}{% if member.department == "Natural Sciences" %}
+- [{{member.title}} {{ member.name }}](faculty/{{ member.lastName | downcase }}/){% endif %}{% endfor %}
+
+### Faculty of Medicine
+
+{% for member in site.faculty %}
+  {% if member.department == "Medicine" %}
+- [{{member.title}} {{ member.name }}](faculty/{{ member.lastName | downcase }}/){% endif %}
+{% endfor %}
+
+### Support Services
 
 
-Faculty of Social Sciences
---------------------------
-
-* School of Policy and Government
-* School of Economics
-
-Faculty of Natural Sciences
----------------------------
-
-* School of Physics
-* School of Chemistry
-
-Faculty of Medicine
--------------------
-
-Support Services
-----------------
-
-* The University Library
-* Research Support Office
-
-Industrial Partners
--------------------
+### Industrial Partners
 

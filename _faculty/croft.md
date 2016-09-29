@@ -1,4 +1,3 @@
-
 ---
 layout: faculty
 name: Anna Croft
