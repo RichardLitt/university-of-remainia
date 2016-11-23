@@ -6,9 +6,7 @@ group:
 ---
 {% include JB/setup %}
 
-##Frequently Posed Questions
-
-###What's the problem here?
+### What's the problem here?
 
 The vast majority of British researchers are deeply 
 concerned that leaving the EU will damage British research and universities severely. In
@@ -16,7 +14,7 @@ particular UK researchers want to retain access to European Funding programs and
 great value that freedom of movement creates in making it easier to work with
 collaborators and colleagues across Europe.
 
-###So really you're just worried about your money?
+### So really you're just worried about your money?
 
 Partly yes. Around 14% of the funding for UK research currently comes from EU programs. 
 This is an area where the UK punches well above its weight and gets a significant return 
@@ -31,7 +29,7 @@ and visits.
 On this site we're aiming to tell the positive stories about how the EU has contributed
 to the UK's ability to do world-leading research that makes a difference.
 
-###Hasn't the UK government already committed to replacing the lost money?
+### Hasn't the UK government already committed to replacing the lost money?
 
 The government has said it will honour those commitments made by the EU prior to an exit, 
 up until 2020. As noted in this 
@@ -45,7 +43,7 @@ UK spending on research has lagged behind our competitors on several measures an
 likely hit to the economy means tax revenues will be down. UK researchers are very
 concerned about the medium to long term strength of UK research funding. 
 
-###Why is our research being done by foreigners anyway?
+### Why is our research being done by foreigners anyway?
 
 Research is an international activity. Many UK researchers work abroad, both in Europe
 and elsewhere, and many UK researchers came here from abroad. More than this researchers
