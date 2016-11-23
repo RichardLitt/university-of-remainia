@@ -30,8 +30,6 @@ group:
 
 ### Support Services
 
-* The University Library
-* Research Support Office
 
 ### Industrial Partners
 
