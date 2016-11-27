@@ -1,6 +1,6 @@
 # This is the default format. 
 # For more see: http://jekyllrb.com/docs/permalinks/
-permalink: /:categories/:year/:month/:day/:title 
+permalink: /:categories/:year/:month/:day/:title
 
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md", "workers"]
 highlighter: rouge
@@ -8,16 +8,16 @@ highlighter: rouge
 sass:
     sass_dir: _sass
 
-# Themes are encouraged to use these universal variables 
+# Themes are encouraged to use these universal variables
 # so be sure to set them if your theme uses them.
 #
-title : University of Remainia
+title : British Research in the EU
 tagline:
 author :
   name : Richard Littauer
-  email : richard@burntfen.com
-  github : RichardLitt
-  twitter : richlitt
+  email : admin@british-research-in.eu
+#  github : RichardLitt
+  twitter : "@ukresearchineu"
 #  feedburner : feedname
 
 collections:
