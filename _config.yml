@@ -11,14 +11,15 @@ sass:
 # Themes are encouraged to use these universal variables
 # so be sure to set them if your theme uses them.
 #
-title : British Research in the EU
-tagline:
+title : British Research in EU
+tagline: The stories of why the European Union matters to British research
 author :
-  name : Richard Littauer
+  name : British Research in EU
   email : admin@british-research-in.eu
-#  github : RichardLitt
   twitter : "@ukresearchineu"
-#  feedburner : feedname
+
+git_remote : git@github.com:RichardLitt/university-of-remainia.git
+github : https://github.com/RichardLitt/university-of-remainia
 
 collections:
   faculty:
