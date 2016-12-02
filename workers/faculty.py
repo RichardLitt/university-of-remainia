@@ -66,7 +66,7 @@ def formatpublicationlist(dois):
     if len(dois) == 0:
         return ""
     print "...publication list of length", len(dois)
-    publications = "##Publications\n\n"
+    publications = "## Publications\n\n"
     for doi in dois:
         print ".",
         biblioentry = formatbiblioentry(doi)
@@ -84,7 +84,7 @@ def formatfundinglist(researcher):
     except AttributeError:
         return ""
         
-    funding = "##Funding\n\n"
+    funding = "## Funding\n\n"
     for grant in researcher.grants:
         try:
             template = "* %s, %s, %d-%d, %s%s\n" % (grant.title,

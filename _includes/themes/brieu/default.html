@@ -1,19 +1,5 @@
-<!DOCTYPE HTML>
-<!--
-	Strongly Typed by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>British Research in the EU</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<!--[if lte IE 8]><script src="{{ BASE_PATH }}/assets/js/ie/html5shiv.js"></script><![endif]-->
-		<link rel="stylesheet" href="{{BASE_PATH}}/assets/css/main.css" />
-		<!--[if lte IE 8]><link rel="stylesheet" href="{{ BASE_PATH }}/assets/css/ie8.css" /><![endif]-->
-	</head>
-	<body class="homepage">
+{% include themes/brieu/header.html %}
+<body class="homepage">
 		<div id="page-wrapper">
 
 			<!-- Header -->
@@ -39,64 +25,6 @@
 					</div>
 				</div>
 
-			<!-- Features --
-				<div id="features-wrapper">
-					<section id="features" class="container">
-						<header>
-							<h2>Gentlemen, behold! This is <strong>Strongly Typed</strong>!</h2>
-						</header>
-						<div class="row">
-							<div class="4u 12u(mobile)">
-
-								<!-- Feature --
-									<section>
-										<a href="#" class="image featured"><img src="{{ BASE_PATH }}/assets/images/pic01.jpg" alt="" /></a>
-										<header>
-											<h3>Okay, so what is this?</h3>
-										</header>
-										<p>This is <strong>Strongly Typed</strong>, a free, fully responsive site template
-										by <a href="http://html5up.net">HTML5 UP</a>. Free for personal and commercial use under the
-										<a href="http://html5up.net/license">CCA 3.0 license</a>.</p>
-									</section>
-
-							</div>
-							<div class="4u 12u(mobile)">
-
-								<!-- Feature --
-									<section>
-										<a href="#" class="image featured"><img src="{{ BASE_PATH }}/assets/images/pic02.jpg" alt="" /></a>
-										<header>
-											<h3>Nice! What is HTML5 UP?</h3>
-										</header>
-										<p><a href="http://html5up.net">HTML5 UP</a> is a side project of <a href="http://twitter.com/ajlkn">AJ’s</a> (= me).
-										I started it as a way to both test my <strong>skel</strong> framework and sharpen up my coding
-										and design skills a bit.</p>
-									</section>
-
-							</div>
-							<div class="4u 12u(mobile)">
-
-								<!-- Feature --
-									<section>
-										<a href="#" class="image featured"><img src="{{ BASE_PATH }}/assets/images/pic03.jpg" alt="" /></a>
-										<header>
-											<h3>Skel? What's that?</h3>
-										</header>
-										<p><strong>Skel</strong> is a lightweight framework for building responsive
-										sites and apps. All of my stuff at <a href="http://html5up.net">HTML5 UP</a> (including this
-										one) are built on this framework.</p>
-									</section>
-
-							</div>
-						</div>
-						<ul class="actions">
-							<li><a href="#" class="button icon fa-file">Tell Me More</a></li>
-						</ul>
-					</section>
-				</div>
-
-
-
 			<!-- Banner -->
 				<div id="banner-wrapper">
 					<div class="inner">
@@ -120,30 +48,6 @@
 											{{ content }}
 										</article>
 
-									<!-- Post --
-										<article class="box post">
-											<header>
-												<h2><a href="#">Why Classical Latin is Important</a></h2>
-											</header>
-											<a href="#" class="image featured"><img src="{{ BASE_PATH }}/assets/images/pic05.jpg" alt="" /></a>
-											<h3>All the reasons</h3>
-											<p>Phasellus laoreet massa id justo mattis pharetra. Fusce suscipit
-											ligula vel quam viverra sit amet mollis tortor congue. Sed quis mauris
-											sit amet magna accumsan tristique. Curabitur leo nibh, rutrum eu malesuada
-											in, tristique at erat lorem ipsum dolor sit amet lorem ipsum sed consequat
-											consequat magna tempus lorem ipsum consequat Phasellus laoreet massa id
-											in, tristique at erat lorem ipsum dolor sit amet lorem ipsum sed consequat
-											magna tempus veroeros lorem sed tempus aliquam lorem ipsum veroeros
-											consequat magna tempus lorem ipsum consequat Phasellus laoreet massa id
-											justo mattis pharetra. Fusce suscipit ligula vel quam viverra sit amet
-											mollis tortor congue. Sed quis mauris sit amet magna accumsan tristique.
-											Curabitur leo nibh, rutrum eu malesuada in, tristique at erat.</p>
-											<ul class="actions">
-												<li><a href="#" class="button icon fa-file">Continue Reading</a></li>
-											</ul>
-										</article>
-										-->
-
 								</div>
 
 							<!-- Sidebar -->
@@ -157,11 +61,15 @@
 													<!-- Excerpt -->
 														<article class="box excerpt">
 															<header>
-																<span class="date">July 30</span>
-																<h3><a href="#">Featured Faculty: Cameron Neylon</a></h3>
+																<h3 style="margin-bottom: 0px;"><a href="#"> {% assign author = site.faculty | where: "name", "Cameron Neylon" | first %} {{ author.name }}</a></h3>
+																<p style="padding: 0px; margin: 0px; color: #999;">Featured Faculty</p>
 															</header>
-															<p>Lorem ipsum dolor odio facilisis convallis. Etiam non nunc vel est
-															suscipit convallis non id orci lorem ipsum sed magna consequat feugiat lorem dolore.</p>
+								              {% if author.image %}
+									              <div id="avatar" style="float: left; padding: 10px 20px 0px 0px; ">
+									                <a href="{{ author.url }} " style="max-width: 150px;" class="image"><img src="{{ author.image }}" alt="{{ author.name }}" /></a>
+									              </div>
+								              {% endif %}
+															{{ author.content | strip_html | truncatewords: 100 }}
 														</article>
 
 												</li>
@@ -170,60 +78,21 @@
 													<!-- Excerpt -->
 														<article class="box excerpt">
 															<header>
-																<span class="date">July 28</span>
-																<h3><a href="#">Featured Faculty: Richard Littauer</a></h3>
+																<h3 style="margin-bottom: 0px;"><a href="#"> {% assign author = site.faculty | where: "name", "Rupert Gatti" | first %} {{ author.name }}</a></h3>
+																<p style="padding: 0px; margin: 0px; color: #999;">Featured Faculty</p>
 															</header>
-															<p>Lorem ipsum dolor odio facilisis convallis. Etiam non nunc vel est
-															suscipit convallis non id orci lorem ipsum sed magna consequat feugiat lorem dolore.</p>
+								              {% if author.image %}
+									              <div id="avatar" style="float: left; padding: 10px 20px 0px 0px; ">
+									                <a href="{{ author.url }} " style="max-width: 150px;" class="image"><img src="{{ author.image }}" alt="{{ author.name }}" /></a>
+									              </div>
+								              {% endif %}
+															{{ author.content | strip_html | truncatewords: 100 }}
 														</article>
 
 												</li>
 
 											</ul>
 										</section>
-
-									<!-- Highlights --
-										<section>
-											<ul class="divided">
-												<li>
-
-													<!-- Highlight --
-														<article class="box highlight">
-															<header>
-																<h3><a href="#">Something of note</a></h3>
-															</header>
-															<a href="#" class="image left"><img src="{{ BASE_PATH }}/assets/images/pic06.jpg" alt="" /></a>
-															<p>Phasellus  sed laoreet massa id justo mattis pharetra. Fusce suscipit ligula vel quam
-															viverra sit amet mollis tortor congue magna lorem ipsum dolor et quisque ut odio facilisis
-															convallis. Etiam non nunc vel est suscipit convallis non id orci. Ut interdum tempus
-															facilisis convallis. Etiam non nunc vel est suscipit convallis non id orci.</p>
-															<ul class="actions">
-																<li><a href="#" class="button icon fa-file">Learn More</a></li>
-															</ul>
-														</article>
-
-												</li>
-												<li>
-
-													<!-- Highlight --
-														<article class="box highlight">
-															<header>
-																<h3><a href="#">Something of less note</a></h3>
-															</header>
-															<a href="#" class="image left"><img src="{{ BASE_PATH }}/assets/images/pic07.jpg" alt="" /></a>
-															<p>Phasellus  sed laoreet massa id justo mattis pharetra. Fusce suscipit ligula vel quam
-															viverra sit amet mollis tortor congue magna lorem ipsum dolor et quisque ut odio facilisis
-															convallis. Etiam non nunc vel est suscipit convallis non id orci. Ut interdum tempus
-															facilisis convallis. Etiam non nunc vel est suscipit convallis non id orci.</p>
-															<ul class="actions">
-																<li><a href="#" class="button icon fa-file">Learn More</a></li>
-															</ul>
-														</article>
-
-												</li>
-											</ul>
-										</section>
-										-->
 
 								</div>
 

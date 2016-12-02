@@ -1,6 +1,6 @@
 # This is the default format. 
 # For more see: http://jekyllrb.com/docs/permalinks/
-permalink: /:categories/:year/:month/:day/:title 
+permalink: /:categories/:year/:month/:day/:title
 
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md", "workers"]
 highlighter: rouge
@@ -8,17 +8,18 @@ highlighter: rouge
 sass:
     sass_dir: _sass
 
-# Themes are encouraged to use these universal variables 
+# Themes are encouraged to use these universal variables
 # so be sure to set them if your theme uses them.
 #
-title : University of Remainia
-tagline:
+title : British Research in EU
+tagline: The stories of why the European Union matters to British research
 author :
-  name : Richard Littauer
-  email : richard@burntfen.com
-  github : RichardLitt
-  twitter : richlitt
-#  feedburner : feedname
+  name : British Research in EU
+  email : admin@british-research-in.eu
+  twitter : "@ukresearchineu"
+
+git_remote : git@github.com:RichardLitt/university-of-remainia.git
+github : https://github.com/RichardLitt/university-of-remainia
 
 collections:
   faculty:
