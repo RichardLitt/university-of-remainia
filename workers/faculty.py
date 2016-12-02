@@ -123,7 +123,8 @@ with open(csvfile, 'rU') as f:
         role = person[5]
         euro = person[6]
         department = person[7]
-        orc = formatorcid(person[8])
+        affiliation = person[8]
+        orc = formatorcid(person[9])
         
 
         print "Researcher:", name, "ORCID:", orc
@@ -142,7 +143,7 @@ with open(csvfile, 'rU') as f:
                                      'lastname' : name.split(' ')[-1],
                                      'title' : title,
                                      'department' : department,
-                                     'school' : "",
+                                     'school' : affiliation,
                                      'orcid' : orc,
                                      'photourl' : photourl,
                                      'role' : role,
