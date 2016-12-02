@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Apply
-header: Apply To The University
+title: Add Profile
+header: Add your experience to the site
 group: 
 ---
 {% include JB/setup %}

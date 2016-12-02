@@ -4,7 +4,7 @@ name: Rupert Gatti
 lastName: Gatti
 title: Dr
 department: Social Sciences
-school: 
+school: Trinity College, University of Cambridge
 orcid: 0000-0003-0676-9024
 openaire: ''
 image: http://www.econ.cam.ac.uk/people/cto/jrjg1/jrjg1.jpg
