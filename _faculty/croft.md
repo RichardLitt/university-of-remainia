@@ -4,7 +4,7 @@ name: Anna Croft
 lastName: Croft
 title: Dr
 department: Natural Sciences
-school: 
+school: Department of Chemical and Environmental Engineering, University of Nottingham
 orcid: 0000-0001-5330-150X
 openaire: ''
 image: https://www.nottingham.ac.uk/Engineering/departments/chemenv/people/staff-images/annacroft.jpg

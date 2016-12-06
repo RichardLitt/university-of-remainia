@@ -17,7 +17,7 @@
                   <li><a class="icon fa-home" href="../../index.html"><span>Mission</span></a></li>
                   <li><a class="icon fa-flask" href="../../research.html"><span>Research</span></a></li>
                   <li><a class="icon fa-users" href="../../faculty.html"><span>Faculty</span></a></li>
-                  <li><a class="icon fa-user-plus" href="../../apply.html"><span>Apply</span></a></li>
+                  <li><a class="icon fa-user-plus" href="../../apply.html"><span>Add your profile</span></a></li>
                   <li><a class="icon fa-question" href="../../frequently-posed-questions.html"><span>Frequently Posed Questions</span></a></li>
                 </ul>
               </nav>
@@ -41,7 +41,8 @@
                       <header>
                         <h2><a href="#">{{ page.title }} {{ page.name }}</a></h2>
                       </header>
-                      <h3>{{ page.department}}, {{ page.school}}</h3>
+                      <h3>{{ page.department }}
+                      {{ page.school }}</h3>
                       {% if page.tagline %}<h3>{{page.tagline}}</h3>{% endif %}
 
                       {{ content }}
